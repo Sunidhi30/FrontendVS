@@ -105,7 +105,7 @@ const ForgetPassword = () => {
       // Send reset email with EmailJS
       const templateParams = {
         to_email: email,
-        message : `Click here to reset your password: http://localhost:5173/reset-password/${resetToken}`, // Reset password route
+        message : `Click here to reset your password: https://backendvs-2.onrender.com/reset-password/${resetToken}`, // Reset password route
       };
 
       await emailjs.send('service_7aws48u', 'template_ko5sit4', templateParams, 'gGatg5smuh7GI6-Lh');
